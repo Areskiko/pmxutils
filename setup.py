@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="stefan-tools",
-    version="0.0.1",
+    name="stefantools",
+    version="0.0.2",
     author="Stefan Mack",
     author_email="stefan_mack@hotmail.com",
     description="Collection of tools for programmation and modeling X",
