@@ -7,7 +7,7 @@ setuptools.setup(
     name="stefan-tools",
     version="0.0.1",
     author="Stefan Mack",
-    author_email="author@example.com",
+    author_email="stefan_mack@hotmail.com",
     description="Collection of tools for programmation and modeling X",
     long_description=long_description,
     long_description_content_type="text/markdown",
