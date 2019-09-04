@@ -11,7 +11,7 @@ setuptools.setup(
     description="Collection of tools for programmation and modeling X",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/Areskiko/stefan-tools",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
