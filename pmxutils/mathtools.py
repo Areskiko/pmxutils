@@ -1,8 +1,4 @@
 """A set of functions aiding in math for ProgModX"""
-import itertools
-import threading
-import time
-import sys
 from numpy import arange
 from math import sin, cos, tan, pi
 
