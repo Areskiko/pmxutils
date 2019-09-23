@@ -1,8 +1,0 @@
-README.md
-setup.py
-stefantools/__init__.py
-stefantools/tools.py
-stefantools.egg-info/PKG-INFO
-stefantools.egg-info/SOURCES.txt
-stefantools.egg-info/dependency_links.txt
-stefantools.egg-info/top_level.txt

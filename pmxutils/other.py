@@ -1,15 +1,7 @@
-name = "example_pkg"
 import itertools
 import threading
 import time
 import sys
-
-def construct(expression, var="x"):
-    """Constructs a function, assign function return to a variable"""
-    def f(x):
-        return eval(expression.replace(var, "x"))
-    return f
-
 class loading():
     """Loading class"""
     def start(self, flavor="loading"):
