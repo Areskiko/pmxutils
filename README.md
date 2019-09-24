@@ -36,8 +36,8 @@ Tools for ProgModX
 
 ## Other
 
- loading
-    >Loading class
+###loading
+    Loading class
     
     * start(flavor="loading")
         >Starts a loading sequence
