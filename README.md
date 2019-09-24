@@ -36,7 +36,7 @@ Tools for ProgModX
 
 ## Other
 
-loading
+* loading
     >Loading class
     
     * start(flavor="loading")
