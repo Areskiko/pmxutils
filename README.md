@@ -9,7 +9,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
 # Table of content
 * [Mathtools](https://github.com/Areskiko/pmxutils/blob/master/README.md#mathtools-pmxutilsmathtools)
   * [construct](https://github.com/Areskiko/pmxutils/blob/master/README.md#constructexpression-varx)
-  * [computeList]()
+  * [computeList](https://github.com/Areskiko/pmxutils/blob/master/README.md#computelistsfunctionlow-high-step1)
   * [newton]()
   * [isInbetween]()
 * [Other]()
