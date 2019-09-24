@@ -39,12 +39,12 @@ Tools for ProgModX
 ###loading
 Loading class
     
-    * start(flavor="loading")
-        >Starts a loading sequence
+* start(flavor="loading")
+    >Starts a loading sequence
         
-        * flavor - The message to be displayed during loading, defaults to 'loading', type = string
-    * stop()
-        >Stops the loading sequence
+    * flavor - The message to be displayed during loading, defaults to 'loading', type = string
+* stop()
+    >Stops the loading sequence
         
-    * animate()
-        >DO NOT USE, internal function
+* animate()
+    >DO NOT USE, internal function
