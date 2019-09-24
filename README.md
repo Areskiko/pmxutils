@@ -14,7 +14,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
   * [isInbetween](https://github.com/Areskiko/pmxutils/blob/master/README.md#isinbetweennumber-limone-limtwo)
 * [Other](https://github.com/Areskiko/pmxutils/blob/master/README.md#other-pmxutilsother)
   * [loading](https://github.com/Areskiko/pmxutils/blob/master/README.md#loading)
-    * [start]()
+    * [start](https://github.com/Areskiko/pmxutils/blob/master/README.md#startflavorloading)
     * [stop]()
     * [animate]()
 
