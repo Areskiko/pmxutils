@@ -11,7 +11,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
   * [construct](https://github.com/Areskiko/pmxutils/blob/master/README.md#constructexpression-varx)
   * [computeList](https://github.com/Areskiko/pmxutils/blob/master/README.md#computelistsfunctionlow-high-step1)
   * [newton](https://github.com/Areskiko/pmxutils/blob/master/README.md#newtonfunction-derivative-tolerance1e-8-rounding--3-iterations--1000)
-  * [isInbetween]()
+  * [isInbetween](https://github.com/Areskiko/pmxutils/blob/master/README.md#isinbetweennumber-limone-limtwo)
 * [Other]()
   * [loading]()
 
