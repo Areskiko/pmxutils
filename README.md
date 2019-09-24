@@ -13,7 +13,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
   * [newton](https://github.com/Areskiko/pmxutils/blob/master/README.md#newtonfunction-derivative-tolerance1e-8-rounding--3-iterations--1000)
   * [isInbetween](https://github.com/Areskiko/pmxutils/blob/master/README.md#isinbetweennumber-limone-limtwo)
 * [Other]()
-  * [loading]()
+  * [loading](https://github.com/Areskiko/pmxutils/blob/master/README.md#loading)
 
 ## Mathtools (`pmxutils.mathtools`)
 
@@ -49,7 +49,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
 
 ## Other (`pmxutils.other`)
 
-### loading
+### `loading`
 Loading class
     
 * #### `start(flavor="loading")`
