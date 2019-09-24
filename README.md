@@ -15,8 +15,8 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
 * [Other](https://github.com/Areskiko/pmxutils/blob/master/README.md#other-pmxutilsother)
   * [loading](https://github.com/Areskiko/pmxutils/blob/master/README.md#loading)
     * [start](https://github.com/Areskiko/pmxutils/blob/master/README.md#startflavorloading)
-    * [stop]()
-    * [animate]()
+    * [stop](https://github.com/Areskiko/pmxutils/blob/master/README.md#stop)
+    * [animate](https://github.com/Areskiko/pmxutils/blob/master/README.md#animate)
 
 ## Mathtools (`pmxutils.mathtools`)
 
