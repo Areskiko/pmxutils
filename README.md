@@ -17,7 +17,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
 
 ## Mathtools (`pmxutils.mathtools`)
 
-* `#### construct(expression, var=x)`
+* #### `construct(expression, var=x)`
     >Returns a function computing the given expression
     
     * `expression` - The mathematical expression to compute, type = string
