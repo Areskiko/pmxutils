@@ -5,7 +5,7 @@ Note that the package is in development and may undergo frequent updates
 
 Install with `python -m pip install pmxutils` for windows and `python3 -m pip install pmxutils` for unix/linux
 
-## Mathtools
+## Mathtools (`pmxutils.mathtools`)
 
 * `construct(expression, var=x)`
     >Returns a function computing the given expression
@@ -37,7 +37,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     * `limOne` - The lower limit for which the number is checked, type = number
     * `limTwo` - The upper limit for which the number is checked, tyoe = number
 
-## Other
+## Other (`pmxutils.other`)
 
 ### loading
 Loading class
