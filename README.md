@@ -7,7 +7,7 @@ Note that the package is in development and may undergo frequent updates
 Install with `python -m pip install pmxutils` for windows and `python3 -m pip install pmxutils` for unix/linux
 
 # Table of content
-* [Mathtools]()
+* [Mathtools](https://github.com/Areskiko/pmxutils/blob/master/README.md#mathtools-pmxutilsmathtools)
   * [construct]()
   * [computeList]()
   * [newton]()
