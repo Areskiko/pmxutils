@@ -34,11 +34,13 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     * `function` - The mathematical expression to use for y value computation, type = string or function from construct
     * `step` - The step size in the x value list, defaults to '1', type = number
 
-* #### `newton(function, derivative, tolerance=1e-8, rounding = 3, iterations = 1000)`
+* #### `newton(function, derivative, limOne, limTwo, tolerance=1e-8, rounding = 3, iterations = 1000)`
     >Uses Newtons way of finding the root of a function, using the function and its derivative, within the given limits.Returns None if it can't find a solution that satisfies the tolerance after the defined number of terations
     
     * `function` - The target mathematical expression, type = string or function from construct
     * `derivative` - The derivative of the target mathematical expression, type = string or function from construct
+    * `limOne` - The lower end of the are which should be checked for roots, type = number
+    * `limTwo` - The upper end of the are which should be checked for roots, type = number
     * `tolerance` - The tolerance for error to speed up computation, defaults to '1e-8', type = number
     * `rounding` - Rounds the x value for the root to the specified amount of decimals, defaults to '3', type = number
     * `iterations` - The number of tries, after which the function will end early

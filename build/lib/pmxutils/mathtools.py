@@ -17,13 +17,13 @@ def computeLists(function, low, high, step=1):
         function = construct(function)
     return (arange(low, high+1, step), [function(i) for i in arange(low, high+1, step)])
 
-def newton(function, derivative, tolerance=1e-8, rounding = 3, iterations = 1000):
+def newton(function, derivative, limOne, limTwo, tolerance=1e-8, rounding = 3, iterations = 1000):
     """Uses Newtons way of finding the root of a function using the function and its derivative, within the given limits.
     Returns None if it can't find a solution that satisfies the tolerance after the defined number of terations"""
-    xn = random.random()*2.5        #Startverdi    #Bruker tilfeldig startverdi
-    TOL = tolerance                 #Toleranse
-    N = iterations                  #Itereasjoner
-    i = 0                           #Tellevariabel
+    xn = random.random()*(limTwo-limOne)        #Startverdi    #Bruker tilfeldig startverdi
+    TOL = tolerance                             #Toleranse
+    N = iterations                              #Itereasjoner
+    i = 0                                       #Tellevariabel
 
     #Constructs functions from the griven expressions if the expressions are strins
     if type(function) == type(str()):
@@ -36,7 +36,7 @@ def newton(function, derivative, tolerance=1e-8, rounding = 3, iterations = 1000
         xn = xn - function(xn)/derivative(xn)
         i += 1
     #Chech if the found value for x gives a y value within the tolerance
-    if abs(function(xn)) <= TOL:
+    if (abs(function(xn)) <= TOL) and (isInbetween(xn, limOne, limTwo)):
         return round(xn, rounding)
     else:
         return None
