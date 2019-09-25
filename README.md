@@ -48,7 +48,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     
     * `number` - The number to be checked, type = number
     * `limOne` - The lower limit for which the number is checked, type = number
-    * `limTwo` - The upper limit for which the number is checked, tyoe = number
+    * `limTwo` - The upper limit for which the number is checked, type = number
 
 ## Other (`pmxutils.other`)
 
