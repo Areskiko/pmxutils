@@ -47,3 +47,26 @@ def isInbetween(number, limOne, limTwo):
         return True
     else:
         return False
+
+def rectangleIntegral(f, a, b, n):
+    """Returns the numerically calculated integral of the function f inbetween a and b using n rectangles"""
+    if type(f) == type(str()):
+        f = construct(f)
+
+    total = 0.0
+    h = (b-a)/n
+    for i in range(0, n):
+        total += f( a+(i*h) )
+    return total * h
+
+def trapezoidIntegral(f, a, b, n) :
+    """Returns the numerically calculated integral of he function f inbetween a and b using n trapezoids"""
+    if type(f) == type(str()):
+        f = construct(f)
+
+    total = (f(a)+f(b))/2.0
+    h = (a-b)/n
+
+    for i in range (1, n) :
+        total += f(a+(i*h))
+    return total * h

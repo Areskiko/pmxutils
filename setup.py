@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pmxutils",
-    version="0.0.3.1",
+    version="0.0.4",
     author="Stefan Mack",
     author_email="stefan_mack@hotmail.com",
     description="Collection of tools for programmation and modeling X",

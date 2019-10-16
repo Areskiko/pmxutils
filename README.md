@@ -12,6 +12,8 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
   * [computeList](https://github.com/Areskiko/pmxutils/blob/master/README.md#computelistsfunctionlow-high-step1)
   * [newton](https://github.com/Areskiko/pmxutils/blob/master/README.md#newtonfunction-derivative-tolerance1e-8-rounding--3-iterations--1000)
   * [isInbetween](https://github.com/Areskiko/pmxutils/blob/master/README.md#isinbetweennumber-limone-limtwo)
+  * [rectangleIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#rectangleintegralf-a-b-n)
+  * [trapezoidIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#trapezoidintegralf-a-b-n)
 * [Other](https://github.com/Areskiko/pmxutils/blob/master/README.md#other-pmxutilsother)
   * [loading](https://github.com/Areskiko/pmxutils/blob/master/README.md#loading)
     * [start](https://github.com/Areskiko/pmxutils/blob/master/README.md#startflavorloading)
@@ -51,6 +53,22 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     * `number` - The number to be checked, type = number
     * `limOne` - The lower limit for which the number is checked, type = number
     * `limTwo` - The upper limit for which the number is checked, type = number
+
+* #### `rectangleIntegral(f, a, b, n)`
+    >Returns the numerically calculated integral of the function f inbetween a and b using n rectangles
+
+    * `f` - The function to integrate, type = string or function from construct
+    * `a` - The low end of the area the be computed, type = number
+    * `b` - The high end of the area to be computed, type = number
+    * `n` - The number of rectangles to use, type = int
+
+* #### `trapezoidIntegral(f, a, b, n)`
+    >Returns the numerically calculated integral of the function f inbetween a and b using n trapezoids
+
+    * `f` - The function to integrate, type = string or function from construct
+    * `a` - The low end of the area the be computed, type = number
+    * `b` - The high end of the area to be computed, type = number
+    * `n` - The number of trapezoids to use, type = int
 
 ## Other (`pmxutils.other`)
 
