@@ -16,6 +16,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
   * [trapezoidIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#trapezoidintegralf-a-b-n)
   * [simpsonIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#trapezoidintegralf-a-b-n)
 * [Other](https://github.com/Areskiko/pmxutils/blob/master/README.md#other-pmxutilsother)
+  * [profile](https://github.com/Areskiko/pmxutils/blob/master/README.md#profilefunction)
   * [loading](https://github.com/Areskiko/pmxutils/blob/master/README.md#loading)
     * [start](https://github.com/Areskiko/pmxutils/blob/master/README.md#startflavorloading)
     * [stop](https://github.com/Areskiko/pmxutils/blob/master/README.md#stop)
