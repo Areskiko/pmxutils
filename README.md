@@ -14,6 +14,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
   * [isInbetween](https://github.com/Areskiko/pmxutils/blob/master/README.md#isinbetweennumber-limone-limtwo)
   * [rectangleIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#rectangleintegralf-a-b-n)
   * [trapezoidIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#trapezoidintegralf-a-b-n)
+  * [simpsonIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#trapezoidintegralf-a-b-n)
 * [Other](https://github.com/Areskiko/pmxutils/blob/master/README.md#other-pmxutilsother)
   * [loading](https://github.com/Areskiko/pmxutils/blob/master/README.md#loading)
     * [start](https://github.com/Areskiko/pmxutils/blob/master/README.md#startflavorloading)
@@ -58,7 +59,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     >Returns the numerically calculated integral of the function f inbetween a and b using n rectangles
 
     * `function` - The function to integrate, type = string or function from construct
-    * `low` - The low end of the area the be computed, type = number
+    * `low` - The low end of the area to be computed, type = number
     * `high` - The high end of the area to be computed, type = number
     * `n` - The number of rectangles to use, type = int
 
@@ -66,9 +67,17 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     >Returns the numerically calculated integral of the function f inbetween a and b using n trapezoids
 
     * `function` - The function to integrate, type = string or function from construct
-    * `low` - The low end of the area the be computed, type = number
+    * `low` - The low end of the area to be computed, type = number
     * `high` - The high end of the area to be computed, type = number
     * `n` - The number of trapezoids to use, type = int
+
+* #### `simpsonIntegral(function, low, high, n)`
+    >Returns the numerically calculated integral of the function inbetween low and high using n quadratic splines
+
+    * `function` - The function to integrate, type = string or function from construct
+    * `low` - The low end of the area to be computed, type = number
+    * `high` - The high end of the area to be computed, type = number
+    * `n` - The number of quadratic splines to use, type = int
 
 ## Other (`pmxutils.other`)
 

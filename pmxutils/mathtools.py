@@ -6,7 +6,7 @@ import random
 def construct(expression, var="x"):
     """Returns a function computing the given expression"""
     def f(x):
-        return eval(expression.replace(var, "x"))
+        return eval(expression.replace("^", "**").replace(var, "x"))
     return f
 
 def computeLists(function, low, high, step=1):
@@ -59,7 +59,7 @@ def rectangleIntegral(function, low, high, n):
         total += function( low+(i*h) )
     return total * h
 
-def trapezoidIntegral(function, low, high, n) :
+def trapezoidIntegral(function, low, high, n):
     """Returns the numerically calculated integral of the function inbetween low and high using n trapezoids"""
     if type(function) == type(str()):
         function = construct(function)
@@ -70,3 +70,17 @@ def trapezoidIntegral(function, low, high, n) :
     for i in range (1, n) :
         total += function(low+(i*h))
     return total * h
+
+def simpsonIntegral(function, low, high, n):
+    """Returns the numerically calculated integral of the function inbetween low and high using n quadratic splines"""
+    if type(function) == type(str()):
+        function = construct(function)
+    h = (high-low)/n
+    total = function(low) + function(high)
+
+    for i in range(2, n, 2):
+        total += function(low+i*h)
+
+    for i in range(1, n, 2):
+        total += function(low+i*h)
+    return total
