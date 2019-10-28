@@ -3,6 +3,19 @@ import itertools
 import threading
 import time
 import sys
+
+def profile(function):
+    """Time profiler. Prints out the elapsed time during function execution"""
+    start_time = time.time()
+    def wrapper(*args):
+        result = function(*args)
+        elapsed_time = round(time.time() - start_time, 4)
+        print(f"""____________________
+{function.__name__}
+    Time Elapsed: {elapsed_time}""")
+        return result
+    return wrapper
+
 class loading():
     """Loading class"""
     def start(self, flavor="loading"):
@@ -28,3 +41,4 @@ class loading():
         sys.stdout.write('\rDone!     ')
         sys.stdout.flush()
         sys.stdout.write("\n")
+

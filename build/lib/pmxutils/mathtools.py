@@ -17,10 +17,10 @@ def computeLists(function, low, high, step=1):
         function = construct(function)
     return (arange(low, high+1, step), [function(i) for i in arange(low, high+1, step)])
 
-def newton(function, derivative, limOne, limTwo, tolerance=1e-8, rounding = 3, iterations = 1000):
+def newton(function, derivative, low, high, tolerance=1e-8, rounding = 3, iterations = 1000):
     """Uses Newtons way of finding the root of a function using the function and its derivative, within the given limits.
     Returns None if it can't find a solution that satisfies the tolerance after the defined number of terations"""
-    xn = random.random()*(limTwo-limOne)        #Startverdi    #Bruker tilfeldig startverdi
+    xn = random.random()*(high-low)        #Startverdi    #Bruker tilfeldig startverdi
     TOL = tolerance                             #Toleranse
     N = iterations                              #Itereasjoner
     i = 0                                       #Tellevariabel
@@ -36,37 +36,37 @@ def newton(function, derivative, limOne, limTwo, tolerance=1e-8, rounding = 3, i
         xn = xn - function(xn)/derivative(xn)
         i += 1
     #Chech if the found value for x gives a y value within the tolerance
-    if (abs(function(xn)) <= TOL) and (isInbetween(xn, limOne, limTwo)):
+    if (abs(function(xn)) <= TOL) and (isInbetween(xn, low, high)):
         return round(xn, rounding)
     else:
         return None
 
-def isInbetween(number, limOne, limTwo):
-    """Returns True if number is inbetween limOne and limTwo, returns False otherwise"""
-    if limOne <= number <= limTwo:
+def isInbetween(number, low, high):
+    """Returns True if number is inbetween low and high, returns False otherwise"""
+    if low <= number <= high:
         return True
     else:
         return False
 
-def rectangleIntegral(f, a, b, n):
-    """Returns the numerically calculated integral of the function f inbetween a and b using n rectangles"""
-    if type(f) == type(str()):
-        f = construct(f)
+def rectangleIntegral(function, low, high, n):
+    """Returns the numerically calculated integral of the function f inbetween low and high using n rectangles"""
+    if type(function) == type(str()):
+        function = construct(function)
 
     total = 0.0
-    h = (b-a)/n
+    h = (high-low)/n
     for i in range(0, n):
-        total += f( a+(i*h) )
+        total += function( low+(i*h) )
     return total * h
 
-def trapezoidIntegral(f, a, b, n) :
-    """Returns the numerically calculated integral of he function f inbetween a and b using n trapezoids"""
-    if type(f) == type(str()):
-        f = construct(f)
+def trapezoidIntegral(function, low, high, n) :
+    """Returns the numerically calculated integral of the function inbetween low and high using n trapezoids"""
+    if type(function) == type(str()):
+        function = construct(function)
 
-    total = (f(a)+f(b))/2.0
-    h = (a-b)/n
+    total = (function(low)+function(high))/2.0
+    h = (high-low)/n
 
     for i in range (1, n) :
-        total += f(a+(i*h))
+        total += function(low+(i*h))
     return total * h

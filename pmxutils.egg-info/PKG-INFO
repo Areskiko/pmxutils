@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pmxutils
-Version: 0.0.4
+Version: 0.0.5.1
 Summary: Collection of tools for programmation and modeling X
 Home-page: https://github.com/Areskiko/stefan-tools
 Author: Stefan Mack
@@ -36,7 +36,7 @@ Description: # PMXUtils
             * `expression` - The mathematical expression to compute, type = string
             * `var` - The variable used in the mathematical expression, defaults tp 'x', type = string
         
-        * #### `computeLists(function,low, high, step=1)`
+        * #### `computeLists(function, low, high, step=1)`
             >Returns a touple of two lists containing x values inbetween low and high, and the computed results for y. In the format of (x_list, y_list)
             
             * `low` - The lower end of the function limit, type = number
@@ -44,41 +44,46 @@ Description: # PMXUtils
             * `function` - The mathematical expression to use for y value computation, type = string or function from construct
             * `step` - The step size in the x value list, defaults to '1', type = number
         
-        * #### `newton(function, derivative, limOne, limTwo, tolerance=1e-8, rounding = 3, iterations = 1000)`
+        * #### `newton(function, derivative, low, high, tolerance=1e-8, rounding = 3, iterations = 1000)`
             >Uses Newtons way of finding the root of a function, using the function and its derivative, within the given limits.Returns None if it can't find a solution that satisfies the tolerance after the defined number of terations
             
             * `function` - The target mathematical expression, type = string or function from construct
             * `derivative` - The derivative of the target mathematical expression, type = string or function from construct
-            * `limOne` - The lower end of the are which should be checked for roots, type = number
-            * `limTwo` - The upper end of the are which should be checked for roots, type = number
+            * `low` - The lower end of the are which should be checked for roots, type = number
+            * `high` - The upper end of the are which should be checked for roots, type = number
             * `tolerance` - The tolerance for error to speed up computation, defaults to '1e-8', type = number
             * `rounding` - Rounds the x value for the root to the specified amount of decimals, defaults to '3', type = number
             * `iterations` - The number of tries, after which the function will end early
         
-        * #### `isInbetween(number, limOne, limTwo)`
+        * #### `isInbetween(number, low, high)`
             >Returns True if number is inbetween limOne and limTwo, returns False otherwise
             
             * `number` - The number to be checked, type = number
-            * `limOne` - The lower limit for which the number is checked, type = number
-            * `limTwo` - The upper limit for which the number is checked, type = number
+            * `low` - The lower limit for which the number is checked, type = number
+            * `high` - The upper limit for which the number is checked, type = number
         
-        * #### `rectangleIntegral(f, a, b, n)`
+        * #### `rectangleIntegral(function, low, high, n)`
             >Returns the numerically calculated integral of the function f inbetween a and b using n rectangles
         
-            * `f` - The function to integrate, type = string or function from construct
-            * `a` - The low end of the area the be computed, type = number
-            * `b` - The high end of the area to be computed, type = number
+            * `function` - The function to integrate, type = string or function from construct
+            * `low` - The low end of the area the be computed, type = number
+            * `high` - The high end of the area to be computed, type = number
             * `n` - The number of rectangles to use, type = int
         
-        * #### `trapezoidIntegral(f, a, b, n)`
+        * #### `trapezoidIntegral(function, low, high, n)`
             >Returns the numerically calculated integral of the function f inbetween a and b using n trapezoids
         
-            * `f` - The function to integrate, type = string or function from construct
-            * `a` - The low end of the area the be computed, type = number
-            * `b` - The high end of the area to be computed, type = number
+            * `function` - The function to integrate, type = string or function from construct
+            * `low` - The low end of the area the be computed, type = number
+            * `high` - The high end of the area to be computed, type = number
             * `n` - The number of trapezoids to use, type = int
         
         ## Other (`pmxutils.other`)
+        
+        * #### `profile(function)`
+            >Time profiler. Prints out the elapsed time during function execution
+        
+            * `function` - The function to profile, type = function
         
         ### `loading()`
         Loading class
