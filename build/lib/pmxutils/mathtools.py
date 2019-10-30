@@ -76,11 +76,14 @@ def simpsonIntegral(function, low, high, n):
     if type(function) == type(str()):
         function = construct(function)
     h = (high-low)/n
-    total = function(low) + function(high)
 
+    sumOne = 0
     for i in range(2, n, 2):
-        total += function(low+i*h)
+        sumOne += function(low+i*h)
 
+    sumTwo = 0
     for i in range(1, n, 2):
-        total += function(low+i*h)
+        sumTwo += function(low+i*h)
+
+    total = function(low) + function(high) + 2*sumOne + 4*sumTwo
     return total * (h/3)
