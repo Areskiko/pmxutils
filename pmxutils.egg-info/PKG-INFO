@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pmxutils
-Version: 0.0.6
+Version: 0.0.6.9
 Summary: Collection of tools for programmation and modeling X
 Home-page: https://github.com/Areskiko/stefan-tools
 Author: Stefan Mack
@@ -24,6 +24,7 @@ Description: # PMXUtils
           * [trapezoidIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#trapezoidintegralf-a-b-n)
           * [simpsonIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#trapezoidintegralf-a-b-n)
         * [Other](https://github.com/Areskiko/pmxutils/blob/master/README.md#other-pmxutilsother)
+          * [profile](https://github.com/Areskiko/pmxutils/blob/master/README.md#profilefunction)
           * [loading](https://github.com/Areskiko/pmxutils/blob/master/README.md#loading)
             * [start](https://github.com/Areskiko/pmxutils/blob/master/README.md#startflavorloading)
             * [stop](https://github.com/Areskiko/pmxutils/blob/master/README.md#stop)

@@ -83,4 +83,4 @@ def simpsonIntegral(function, low, high, n):
 
     for i in range(1, n, 2):
         total += function(low+i*h)
-    return total
+    return total * (h/3)

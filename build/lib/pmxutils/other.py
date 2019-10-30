@@ -10,9 +10,10 @@ def profile(function):
     def wrapper(*args):
         result = function(*args)
         elapsed_time = round(time.time() - start_time, 4)
-        print(f"""____________________
+        print(f"""________________________
 {function.__name__}
-    Time Elapsed: {elapsed_time}""")
+    Time Elapsed: {elapsed_time}
+________________________""")
         return result
     return wrapper
 
