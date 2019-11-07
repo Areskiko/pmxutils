@@ -33,8 +33,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     * `var` - The variable used in the mathematical expression, defaults tp 'x', type = string
 
 * #### `advConstruct(expression, *args, constants = {})
-    >Returns a function computing the given expression. The variable names need to be listed as individual string arguments.
-    Constants is an optional argument with the name and value of constants in the expression
+    >Returns a function computing the given expression
 
     * `expression` - The mathematical expression to compute, type = string
     * `args` - Any number of individual arguments naming the variables used in the expresion, type = string
