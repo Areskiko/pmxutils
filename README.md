@@ -16,7 +16,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
   * [rectangleIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#rectangleintegralfunction-low-high-n)
   * [trapezoidIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#trapezoidintegralfunction-low-high-n)
   * [simpsonIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#simpsonintegralfunction-low-high-n)
-  * [euler]()
+  * [euler](https://github.com/Areskiko/pmxutils/blob/master/README.md#eulerfunctionderivative-low-high-y0-n)
 * [Other](https://github.com/Areskiko/pmxutils/blob/master/README.md#other-pmxutilsother)
   * [profile](https://github.com/Areskiko/pmxutils/blob/master/README.md#profilefunction)
   * [loading](https://github.com/Areskiko/pmxutils/blob/master/README.md#loading)
@@ -92,7 +92,8 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
 
 * #### `euler(functionDerivative, low, high, y0, n)`
     >Returns a numpy array x, containing the x values of the function, and an array F, containing the computed values for the antiderivative function of the given function functionDerivative inbetween low and high with N steps
-    Only supports functions with one variable
+    
+    >Only supports functions with one variable
 
     * `functionDerivative` - The derivative of the goal function, type = string or function from construct
     * `low` - The low end of the function to be computed, type = number
