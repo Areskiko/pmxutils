@@ -9,12 +9,14 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
 # Table of content
 * [Mathtools](https://github.com/Areskiko/pmxutils/blob/master/README.md#mathtools-pmxutilsmathtools)
   * [construct](https://github.com/Areskiko/pmxutils/blob/master/README.md#constructexpression-varx)
+  * [advConstruct]()
   * [computeList](https://github.com/Areskiko/pmxutils/blob/master/README.md#computelistsfunction-low-high-step1)
   * [newton](https://github.com/Areskiko/pmxutils/blob/master/README.md#newtonfunction-derivative-low-high-tolerance1e-8-rounding--3-iterations--1000)
   * [isInbetween](https://github.com/Areskiko/pmxutils/blob/master/README.md#isinbetweennumber-low-high)
   * [rectangleIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#rectangleintegralfunction-low-high-n)
   * [trapezoidIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#trapezoidintegralfunction-low-high-n)
   * [simpsonIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#simpsonintegralfunction-low-high-n)
+  * [euler]()
 * [Other](https://github.com/Areskiko/pmxutils/blob/master/README.md#other-pmxutilsother)
   * [profile](https://github.com/Areskiko/pmxutils/blob/master/README.md#profilefunction)
   * [loading](https://github.com/Areskiko/pmxutils/blob/master/README.md#loading)
@@ -29,6 +31,14 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     
     * `expression` - The mathematical expression to compute, type = string
     * `var` - The variable used in the mathematical expression, defaults tp 'x', type = string
+
+* #### `advConstruct(expression, *args, constants = {})
+    >Returns a function computing the given expression. The variable names need to be listed as individual string arguments.
+    Constants is an optional argument with the name and value of constants in the expression
+
+    * `expression` - The mathematical expression to compute, type = string
+    * `args` - Any number of individual arguments naming the variables used in the expresion, type = string
+    * `constants` - A dictionary with any numerical constants in the expression, type = dict
 
 * #### `computeLists(function, low, high, step=1)`
     >Returns a touple of two lists containing x values inbetween low and high, and the computed results for y. In the format of (x_list, y_list)
@@ -79,6 +89,17 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     * `low` - The low end of the area to be computed, type = number
     * `high` - The high end of the area to be computed, type = number
     * `n` - The number of quadratic splines to use, type = int
+
+* #### `euler(functionDerivative, low, high, y0, n)`
+    >Returns a numpy array x, containing the x values of the function, and an array F, containing the computed values for the antiderivative function of the given function functionDerivative inbetween low and high with N steps
+    Only supports functions with one variable
+
+    * `functionDerivative` - The derivative of the goal function, type = string or function from construct
+    * `low` - The low end of the function to be computed, type = number
+    * `high` - The high end of the area to be computed, type = number
+    * `y0` - The initial value of the goal function
+    * `n` - The number of computations to perform
+
 
 ## Other (`pmxutils.other`)
 

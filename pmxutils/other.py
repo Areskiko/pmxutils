@@ -6,9 +6,9 @@ import sys
 
 def profile(function):
     """Time profiler. Prints out the elapsed time during function execution"""
-    start_time = time.time()
-    def wrapper(*args):
-        result = function(*args)
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = function(*args, **kwargs)
         elapsed_time = round(time.time() - start_time, 4)
         print(f"""________________________
 {function.__name__}
@@ -42,4 +42,3 @@ class loading():
         sys.stdout.write('\rDone!     ')
         sys.stdout.flush()
         sys.stdout.write("\n")
-
