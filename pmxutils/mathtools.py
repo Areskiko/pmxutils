@@ -121,3 +121,12 @@ def euler(functionDerivative, low, high, y0, n):
         F[i+1] = F[i] + functionDerivative(x[i]) * h
         
     return x, F
+
+def lemma(a:int, b:int):
+    """Returns the greatest common denominator of a and b using the lemma algorithm"""
+    r = 1
+    while r != 0:
+        r = a%b
+        a = b
+        b = r
+    return a

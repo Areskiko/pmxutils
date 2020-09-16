@@ -17,6 +17,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
   * [trapezoidIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#trapezoidintegralfunction-low-high-n)
   * [simpsonIntegral](https://github.com/Areskiko/pmxutils/blob/master/README.md#simpsonintegralfunction-low-high-n)
   * [euler](https://github.com/Areskiko/pmxutils/blob/master/README.md#eulerfunctionderivative-low-high-y0-n)
+  * [lemma](https://github.com/Areskiko/pmxutils/blob/master/README.md#lemmaa-b)
 * [Other](https://github.com/Areskiko/pmxutils/blob/master/README.md#other-pmxutilsother)
   * [profile](https://github.com/Areskiko/pmxutils/blob/master/README.md#profilefunction)
   * [loading](https://github.com/Areskiko/pmxutils/blob/master/README.md#loading)
@@ -99,6 +100,12 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     * `high` - The high end of the area to be computed, type = number
     * `y0` - The initial value of the goal function
     * `n` - The number of computations to perform
+
+* #### `lemma(a, b)`
+    >Returns the greatest common denominator of a and b using the lemma algorithm
+
+    * `a` - The first number
+    * `b` - The second number
 
 
 ## Other (`pmxutils.other`)
