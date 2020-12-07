@@ -33,7 +33,7 @@ Install with `python -m pip install pmxutils` for windows and `python3 -m pip in
     * `expression` - The mathematical expression to compute, type = string
     * `var` - The variable used in the mathematical expression, defaults tp 'x', type = string
 
-* #### `advConstruct(expression, *args, constants = {})
+* #### `advConstruct(expression, *args, constants = {})`
     >Returns a function computing the given expression
 
     * `expression` - The mathematical expression to compute, type = string
